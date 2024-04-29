@@ -8,7 +8,6 @@
     </v-container>
   </v-main>
 
-
     <Footer></Footer>
 
 

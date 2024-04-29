@@ -1,8 +1,14 @@
 <template>
   <v-footer app>
-    <v-btn>
-      <v-icon src="./assets/gh-loho.svg"></v-icon>
+
+    <v-btn variant="plain" href="https://github.com/carrotFarmer78">
+      <v-icon icon="fab fa-github"/>
     </v-btn>
+    <v-btn variant="plain" href="https://github.com/carrotFarmer78">
+      <v-icon icon="fab fa-github"/>
+    </v-btn>
+
+
     <v-spacer></v-spacer>
     <span>&copy; 2024</span>
   </v-footer>
