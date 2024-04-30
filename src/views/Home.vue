@@ -1,13 +1,20 @@
 <template>
   <v-card>
     <v-data-table
+        disable-pagination
+        hide-default-footer
+        :loading="dataStore.isBusy"
         :headers="headers"
         :items="dataStore.items"
-    ></v-data-table>
+    >
+      <template #bottom></template>
+    </v-data-table>
   </v-card>
 
-  <v-btn :disabled="dataStore.isBusy" @click="async() => { await dataStore.updateData() }">
-    Update
+  <v-btn
+    :disabled="dataStore.isBusy"
+    @click="async() => { await dataStore.updateData() }">
+      Update
   </v-btn>
 
 </template>

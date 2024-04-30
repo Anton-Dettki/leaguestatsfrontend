@@ -1,8 +1,8 @@
 <template>
   <v-footer app>
 
-    <v-btn href="https://github.com/carrotFarmer78">
-      <v-icon icon="fab fa-github"/>
+    <v-btn append-icon="fab fa-github" href="https://github.com/carrotFarmer78" variant="plain">
+
     </v-btn>
     <v-btn
         variant="plain"
