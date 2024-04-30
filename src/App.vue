@@ -5,10 +5,12 @@
   <v-main app>
     <v-container>
       <Home v-if="currentTab === 'Home'"/>
+      <About v-if="currentTab === 'About'"/>
+      <Contact v-if="currentTab === 'Contact'"/>
     </v-container>
   </v-main>
 
-    <Footer></Footer>
+    <Footer @tab-changed="switchTab"></Footer>
 
 
 </v-app>
@@ -18,13 +20,15 @@
 import { ref } from "vue";
 
 import Header from "@/components/Header.vue";
-import Home from "@/views/Home.vue";
 import Footer from "@/components/Footer.vue";
+
+import Home from "@/views/Home.vue";
+import About from "@/views/About.vue";
+import Contact from "@/views/Contact.vue";
 
 const currentTab = ref("Home")
 
 function switchTab(tab) {
-  console.log(tab)
   currentTab.value = tab
 }
 </script>
