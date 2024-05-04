@@ -16,26 +16,45 @@
     @click="async() => { await dataStore.updateData() }">
       Update
   </v-btn>
+  <v-btn
+    @click="advancedData">
+    {{ advancedToggle ? 'Normal' : 'Advanced'}}
+  </v-btn>
 
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import { useDataStore } from "@/stores/dataStore";
 
 const dataStore = useDataStore()
 
-const headers = [
+const advancedToggle = ref(false)
+
+const headers = ref([
   { title: 'Account', value: 'gameName'},
   { title: 'Kills', value: 'killsTotal', sortable: true },
   { title: 'Deaths', value: 'deathsTotal', sortable: true },
   { title: 'Wins', value: 'wins', sortable: true },
   { title: 'Losses', value: 'losses', sortable: true }
-]
+])
 
 onMounted(  () => {
   dataStore.getAllAccounts()
 })
+
+function advancedData(){
+
+  dataStore.calculateAdvanced()
+  advancedToggle.value = !advancedToggle.value
+
+  if(advancedToggle.value) {
+    headers.value.push({title: 'Assists', value: 'assistsTotal', sortable: true})
+    headers.value.push({title: 'K/D', value: 'kda', sortable: true})
+  } else {
+    headers.value.pop()
+  }
+}
 </script>
 
 <style scoped>
