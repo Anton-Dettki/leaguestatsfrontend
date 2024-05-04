@@ -13,7 +13,7 @@
 
   <v-btn
     :disabled="dataStore.isBusy"
-    @click="async() => { await dataStore.updateData() }">
+    @click="async() => { await dataStore.updateData(); dataStore.calculateAdvanced() }">
       Update
   </v-btn>
   <v-btn
@@ -51,8 +51,10 @@ function advancedData(){
   if(advancedToggle.value) {
     headers.value.push({title: 'Assists', value: 'assistsTotal', sortable: true})
     headers.value.push({title: 'K/D', value: 'kda', sortable: true})
+    headers.value.push({title: 'Games', value: 'games', sortable: true})
+
   } else {
-    headers.value.pop()
+    headers.value = headers.value.slice(0, 5)
   }
 }
 </script>

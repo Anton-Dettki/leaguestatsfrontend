@@ -24,8 +24,17 @@ export const useDataStore = defineStore('data', () => {
 
     function calculateAdvanced(){
         for(let i = 0; i < items.value.length; i++){
-            items.value[i].kda = (items.value[i].killsTotal + items.value[i].assistsTotal) / items.value[i].deathsTotal
-            items.value[i].kda.toFixed(2)
+
+            // Calculate kda
+            let kda = (items.value[i].killsTotal + items.value[i].assistsTotal) / items.value[i].deathsTotal
+            if(isFinite(kda)) {
+                items.value[i].kda = kda.toFixed(2)
+            } else {
+                items.value[i].kda = 'Perfect'
+            }
+
+            items.value[i].games = items.value[i].wins + items.value[i].losses
+
         }
     }
     return { items, isBusy, updateData, getAllAccounts, calculateAdvanced }
