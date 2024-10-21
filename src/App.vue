@@ -7,6 +7,7 @@
       <Home v-if="currentTab === 'Home'"/>
       <About v-if="currentTab === 'About'"/>
       <Contact v-if="currentTab === 'Contact'"/>
+      <Cards v-if="currentTab === 'Cards'"></Cards>
     </v-container>
   </v-main>
 
@@ -25,6 +26,7 @@ import Footer from "@/components/Footer.vue";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
+import Cards from "@/views/Cards.vue";
 
 const currentTab = ref("Home")
 

@@ -20,6 +20,7 @@ export const useDataStore = defineStore('data', () => {
         const response = await axios.get(`${process.env.VUE_APP_SERVER}/api/AllAccounts`) //TODO
         items.value = response.data
         isBusy.value = false
+        calculateAdvanced()
     }
 
     function calculateAdvanced(){

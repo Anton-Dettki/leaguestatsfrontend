@@ -1,7 +1,8 @@
 <template>
   <v-app-bar app density="compact">
     <v-app-bar-title>
-      <v-btn @click="switchTab">League Stats</v-btn>
+      <v-btn @click="switchTab('Home')">League Stats</v-btn>
+      <v-btn @click="switchTab('Cards')">Cards</v-btn>
     </v-app-bar-title>
   </v-app-bar>
 </template>
@@ -10,10 +11,9 @@
 
 
 const emit = defineEmits(['tab-changed'])
-const home = "Home"
 
-function switchTab() {
-  emit('tab-changed', home)
+function switchTab(tab) {
+  emit('tab-changed', tab)
 }
 
 </script>

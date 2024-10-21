@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7278924-6eb8-4eb5-9686-8aa890ac88a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/Cards.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/dataStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/dataStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,22 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/adprivat/Desktop/Repos/leaguestatsfrontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;T03--Carddisplay&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/adprivat/Desktop/Repos/leaguestatsfrontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
@@ -88,6 +107,24 @@
       <workItem from="1714242273954" duration="89000" />
       <workItem from="1714480510984" duration="674000" />
       <workItem from="1714845636767" duration="937000" />
+      <workItem from="1715451696050" duration="1937000" />
+      <workItem from="1715548079031" duration="369000" />
+      <workItem from="1715770027038" duration="710000" />
+      <workItem from="1716041627348" duration="7741000" />
+      <workItem from="1716114085319" duration="203000" />
+      <workItem from="1717669936258" duration="26000" />
+      <workItem from="1718281616489" duration="2486000" />
+      <workItem from="1718888871890" duration="2032000" />
+      <workItem from="1719475880435" duration="1051000" />
+      <workItem from="1720767928994" duration="1219000" />
+      <workItem from="1724012317815" duration="1419000" />
+      <workItem from="1724050608175" duration="3000" />
+      <workItem from="1725653315630" duration="5929000" />
+      <workItem from="1726402502371" duration="1928000" />
+      <workItem from="1726417080926" duration="599000" />
+      <workItem from="1726575186311" duration="599000" />
+      <workItem from="1726765674254" duration="587000" />
+      <workItem from="1727492421059" duration="1046000" />
     </task>
     <servers />
   </component>
